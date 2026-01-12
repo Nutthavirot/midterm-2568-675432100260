@@ -1,0 +1,30 @@
+{
+  "name": "midterm-2568-675432100260",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js",
+    "client": "live-server public",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nutthavirot/midterm-2568-675432100260.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nutthavirot/midterm-2568-675432100260/issues"
+  },
+  "homepage": "https://github.com/Nutthavirot/midterm-2568-675432100260#readme",
+  "description": "",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "sqlite3": "^5.1.7"
+  }
+}
