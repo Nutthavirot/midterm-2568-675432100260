@@ -57,7 +57,7 @@ class BookRepository {
         // return Promise
         const { title, author, isbn } = bookData;
         return new Promise((resolve, reject) => {
-            const sql = 'UPDATE products SET title = ?, author = ?, isbn = ?';
+            const sql = 'UPDATE books SET title = ?, author = ?, isbn = ? WHERE id = ?';
 
             db.run(sql, [title, author, isbn, id], function(err) {
                 if (err) {

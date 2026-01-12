@@ -46,15 +46,11 @@ class BookService {
 
     // CREATE BOOK
     async createBook(bookData) {
-        // 1. Validate book data
         bookValidator.validateBook(bookData);
 
         try {
-            // 2. Create book
-            const id = await bookRepository.create(bookData);
-
-            // 3. Return created book
-            return await bookRepository.findById(id);
+            // repository คืน book object อยู่แล้ว
+            return await bookRepository.create(bookData);
 
         } catch (err) {
             if (err.message && err.message.includes('UNIQUE')) {
@@ -63,6 +59,7 @@ class BookService {
             throw err;
         }
     }
+
 
     // UPDATE BOOK
     async updateBook(id, bookData) {
@@ -152,6 +149,7 @@ class BookService {
         }
 
         await bookRepository.delete(id);
+
     }
 }
 

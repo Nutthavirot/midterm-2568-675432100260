@@ -14,6 +14,12 @@ class BookValidator {
         return true;
     }
 
+    validateBook(bookData) {
+    this.validateBookData(bookData);
+    this.validateISBN(bookData.isbn);
+}
+
+
     validateISBN(isbn) {
         // Pattern: (978|979) + 9 digits + (digit or X)
         const isbnPattern = /^(97[89])?\d{9}[\dXx]$/;
