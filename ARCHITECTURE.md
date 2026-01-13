@@ -2,8 +2,8 @@
 # Library Management System - Client-Server Architecture
 
 ## 📋 Project Information
-- **Student Name:** Nattasith Manochai 
-- **Student ID:** 67543210056-7
+- **Student Name:** Natthavirot Suthitranmongkron
+- **Student ID:** 67543210026-0
 - **Course:** ENGSE207 Software Architecture 
 - **Architecture Style:** Client-Server (REST API) + Internal Layered 
 
